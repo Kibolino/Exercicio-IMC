@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="Código.js"></script>
+    
+</head>
+<body>
+    <div>
+        <table class="tabela" border="1">
+            <tr class="tab">
+                <td>IMC</td>
+                <td>Classificação</td>
+            </tr>
+            <tr>
+                <td class="tab">Abaixo de 18,5</td>
+                <td class="tab2">Abaixo do peso</td>
+            </tr>
+            <tr>
+                <td class="tab">Entre 18,6 e 24,9</td>
+                <td class="tab3">Peso ideal (parabéns)</td>
+            </tr>
+            <tr>
+                <td class="tab">Entre 25,0 e 29,9</td>
+                <td class="tab2">Levemente acima do peso</td>
+            </tr>
+            <tr>
+                <td class="tab">Entre 30,0 e 34,9</td>
+                <td class="tab3">Obesidade grau I</td>
+            </tr>
+            <tr>
+                <td class="tab">Entre 35,0 e 39,9</td>
+                <td class="tab2">Obesidade grau II (severa)</td>
+            </tr>
+            <tr>
+                <td class="tab">Acima de 40</td>
+                <td class="tab3">Obesidade III (mórbida)</td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div>
+        <form id="formulario">
+            <div class="conteiner">
+                <h1>Calculo IMC</h1>
+                
+                <label for="Peso">Peso</label>
+                <input class="tab3" name="peso" type="text" /><br/>
+            
+                <label for="altura">Altura</label>
+                <input class="tab3" name="altura" type="text" /><br/>
+            
+            
+                <label for="imc">IMC</label>
+                <input name="imc" type="text" disabled="disabled" />
+                    
+                <a href="#" onclick="calcular();">Calcular</a>
+            </div>
+            </form>
+    </div>
+</body>
+</html>
